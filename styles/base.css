@@ -1,0 +1,268 @@
+/* main css challenge 3 */
+
+body {
+    margin: 0;
+  background: #9b9fb2; /* Old browsers */
+  background: -moz-linear-gradient(top, #70A0AF 0%, #061028 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #70A0AF 0%,#061028 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #70A0AF 0%,#061028 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+h2, p {
+    text-align: center;
+    color: white;
+    font-family: avenir, arial;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+  background: #9b9fb2;
+  background: -moz-linear-gradient(top, rgba(0,0,25,0.75) 0%, rgba(0,0,25,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,25,0.75) 0%,rgba(0,0,25,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,25,0.75) 0%,rgba(0,0,25,0) 100%);
+  width: 100%;
+  height: 7%;
+  padding-top: 4%;
+}
+
+
+#map {
+  width: 96%;
+  height: 250px;
+  margin: 2%;
+  
+}
+
+#weather, #wind, #landing {
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+    background-color: #70A0AF;
+    padding: 3%;
+    border-radius: 5px;
+    text-align: center;
+    width: 92%;
+    margin: 1%;
+    font-size: 0.7em;
+}
+
+.geocoder {
+    width: 50%;
+    font-size: 0.5em;
+    float: left;
+    margin: 0;
+    
+}
+
+#weather img {
+    width: 50px;
+    float: center;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container p {
+    padding-right: 5%;
+    padding-left: 5%;
+    
+}
+
+.container img:nth-child(3) {
+    padding-right: 22%;
+}
+
+.flexmap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container2 {
+    display: flex;
+    align-items: center stretch;
+    padding: 2%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.container img:nth-child(2) {
+    width: 30%;
+    height: 5%;
+}
+
+.container img:nth-child(3) {
+    width: 20%;
+    opacity: 75%;
+}
+
+
+
+
+
+
+/*---------- IPAD VERSIE ---------------*/
+
+
+
+
+@media only screen and (min-width: 580px){
+
+.container2 {
+    flex-direction: row;
+}
+
+#weather, #wind, #landing {
+    width: 25%;
+    font-size: 0.8em;
+}
+
+.flexmap {
+    align-items: left;
+    flex-direction: column;
+}
+
+.geocoder {
+    width: 20%;
+    font-size: 0.5em;
+    float: left;
+    
+}
+
+
+#map {
+  height: 350px;
+  
+}
+
+.container p {
+    font-size: 1em;
+    
+}
+
+.container img:nth-child(3) {
+    padding-right: 22%;
+}
+
+
+.container img:nth-child(2) {
+    max-width: 140px;
+    height: 5%;
+}
+
+.container img:nth-child(3) {
+    max-width: 100px;
+    opacity: 75%;
+}
+
+}
+
+
+
+
+
+/*------------- KLEIN DESKTOP --------------*/
+
+
+
+@media only screen and (min-width: 768px){
+
+
+#weather, #wind, #landing {
+    font-size: 1.1em;
+}
+
+
+.flexmap {
+    align-items: left;
+    flex-direction: column;
+}
+
+.geocoder {
+    width: 20%;
+    font-size: 0.5em;
+    float: left;
+    
+}
+
+.container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: flex-end;
+}
+
+#map {
+  height: 350px;
+  
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+.container p {
+    font-size: 0.95em;
+    
+}
+
+.container img:nth-child(3) {
+    padding-right: 0;
+}
+
+.flexmap {
+    flex-direction: column-reverse;
+}
+
+
+}
+
+
+/*---------------- GROOT DESKTOP ---------------*/
+
+@media only screen and (min-width: 1366px){
+
+.container2 {
+    flex-direction: row-reverse;
+}
+
+.container {
+    margin-top: -40px;
+}
+
+#weather, #wind, #landing {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 5%;
+    height: 5%;
+}
+
+#geocoder {
+    float: left;
+    width: 80%;
+}
+
+.flexmap {
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+#map {
+    margin-bottom: 0;
+    height: 400px;
+}
+
+
+
+}
+
+
+
+

@@ -1,0 +1,39 @@
+<!DOCYTPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+		<title>MapBox</title>
+        <script src="scripts/main.js" defer></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+        <link href="styles/base.css" rel="stylesheet" />
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    </head>
+    <body>
+        <h2>Live Landing Time Simulator</h2>
+         <div class="container">
+          <p>Powered by: </p>
+          <img src="images/spacex-logo.png"/>
+          <img src="images/nasa-logo.png"/>
+         </div>
+         
+         <div class="flexmap">
+         <main id="map"></main> 
+         <aside id="geocoder" class="geocoder"></aside> <br>
+         </div>
+        
+        <div class="container2">      
+            <article id="weather"></article>
+            <article id="wind"></article>
+            <article id="landing"></article>
+        </div>
+        
+
+    </body>
+</html>
